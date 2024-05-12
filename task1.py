@@ -4,7 +4,7 @@ class Car:
 
     def horse_powers(self):
         self.horse_powers_ = None
-        return horse_powers_
+
 
     def __str__(self):
         return '{}:   Цена {}    Мощность двигателя {}'.format(self.__class__.__name__, self.price, self.horse_powers_)
