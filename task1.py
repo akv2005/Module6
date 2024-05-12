@@ -29,11 +29,6 @@ class Kia(Car):
         return self.horse_powers_
 
 
-    # price = 900000
-    # horse_powers = 120
-    # print('Цена Kia:', price, '      Мощность двигателя Kia:', horse_powers)
-
-
 car_Nissan = Nissan()
 print(car_Nissan)
 car_Kia = Kia()
