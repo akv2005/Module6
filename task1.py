@@ -20,12 +20,21 @@ class Nissan(Car):
         return self.horse_powers_
 
 class Kia(Car):
-    price = 900000
-    horse_powers = 120
-    print('Цена Kia:', price, '      Мощность двигателя Kia:', horse_powers)
+    def __init__(self):
+        self.price = 900000
+        self.horse_powers_= self.horse_powers()
+
+    def horse_powers(self):
+        self.horse_powers_= 150
+        return self.horse_powers_
+
+
+    # price = 900000
+    # horse_powers = 120
+    # print('Цена Kia:', price, '      Мощность двигателя Kia:', horse_powers)
 
 
 car_Nissan = Nissan()
-#print(Car.horse_powers())
 print(car_Nissan)
 car_Kia = Kia()
+print(Kia())
