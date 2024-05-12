@@ -2,8 +2,12 @@ class Car:
     """ Автомобили """
     price = 1000000
 
+    def __init__(self):
+        self.horse_powers()
+
     def horse_powers(self):
-        self.horse_powers_ = None
+        self.horse_powers_ = 33
+        return
 
 
     def __str__(self):
@@ -22,14 +26,17 @@ class Nissan(Car):
 class Kia(Car):
     def __init__(self):
         self.price = 900000
-        self.horse_powers_= self.horse_powers()
+        self.horse_powers_ = self.horse_powers()
 
     def horse_powers(self):
-        self.horse_powers_= 150
+        self.horse_powers_ = 150
         return self.horse_powers_
 
 
+car_ = Car()
+print(car_)
+
 car_Nissan = Nissan()
 print(car_Nissan)
-car_Kia = Kia()
 print(Kia())
+
